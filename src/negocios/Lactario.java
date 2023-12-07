@@ -58,6 +58,7 @@ public class Lactario {
 		
 		   //Agrege aquí el código para inserta un elemento en el Objeto TreeSet
 		   //el objeto se llama t y esta definido al inicio de la clase
+		   t.add(new Mujer(id,nombre,edad,fecha));
 		   
 		   return true;
 		
@@ -82,6 +83,7 @@ public class Lactario {
 			int edad, Fecha fecha) throws Exception{
 		try {
 		   //Agrege aquí el código para eliminar un elemento en el Objeto ArbolAVL
+		   abo.eliminar(new Mujer(id, nombre,edad,fecha));
 		   
 		 
 		   return true;
@@ -105,6 +107,7 @@ public class Lactario {
 			int edad, Fecha fecha) throws Exception{
 		try {
 			//Agrege aquí el código para eliminar un elemento en el Objeto TreeSet
+			t.remove(new Mujer(id,nombre,edad,fecha));
 		  
 		   return true;
 		}
@@ -124,6 +127,9 @@ public class Lactario {
 			int edad, Fecha fecha) throws Exception{
 		//Coloque aquí el código para que busque el objeto Mujer
 		// y regrese verdadero si lo encuentra y falso si no
+		if (abo.buscar(new Mujer(id, nombre, edad,fecha)) != null)
+			return true;
+		else return false;
 		
 		
 		
@@ -141,6 +147,10 @@ public class Lactario {
 			int edad, Fecha fecha) throws Exception{
 		//Agrege aquí el código para localice un elemento en el Objeto TreeSet
 		// y devuelva verdadero en caso que lo encuntre y falso en caso que no
+		if(t.contains(new Mujer(id,nombre,edad,fecha)))
+			return true;
+		else
+			return false;
 		
 		
 		
@@ -193,6 +203,11 @@ public class Lactario {
 		try {
 			//coloque el código necesario para recorrer la colección t
 			//utilizando el Iterador Mujer, 
+			for (Iterator<Mujer> it = t.iterator(); it.hasNext() ;)
+			{
+				System.out.println(it.next());
+			}
+			return true;
 			
 		}
 		catch (Exception e) {

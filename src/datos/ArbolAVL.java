@@ -191,6 +191,7 @@ public class ArbolAVL  {
 				// el Resultado del método visitar2(aux);
 				//el objeto tipo lista se llama lista y esta definido al
 				//inicio de esta clase.
+				lista.add(visitar2(aux));
 				
 				inorden2(aux.getDerecho());
 			}
