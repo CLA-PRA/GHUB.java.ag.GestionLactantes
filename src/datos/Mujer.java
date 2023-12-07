@@ -4,7 +4,7 @@ package datos;
 //con las interfases ComparableMujer y Comparable
 //Recuerde que Comparable es una interfase genérica y debera indicar 
 //el tipo de Objeto que usara, en nuestro caso es Mujer
-public class Mujer implements ComparableMujer, Comparable<Mujer>{
+public class Mujer implements {
 	
 	
 	private String id;
@@ -69,11 +69,7 @@ public class Mujer implements ComparableMujer, Comparable<Mujer>{
 	}
 	//Sobreescriba el método necesario para que ordene los Nodos
 	//  en base al atributo Nombre
-	@Override
-	public int compareTo(Mujer o) {
-		int valor=this.nombre.compareTo(o.getNombre());
-		return valor;
-	}
+	
 	
 	
 	
