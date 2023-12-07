@@ -189,7 +189,9 @@ public class ArbolAVL  {
 				inorden2(aux.getIzquierdo());
 				//Coloque aquí el código para que inserte en la LinkedList
 				// el Resultado del método visitar2(aux);
-				lista.add(visitar2(aux));
+				//el objeto tipo lista se llama lista y esta definido al
+				//inicio de esta clase.
+				
 				inorden2(aux.getDerecho());
 			}
 		}

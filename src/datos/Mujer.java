@@ -2,7 +2,9 @@ package datos;
 
 //Coloque aquí el código para que implemente este clase
 //con las interfases ComparableMujer y Comparable
-public class Mujer implements ComparableMujer,Comparable<Mujer>{
+//Recuerde que Comparable es una interfase genérica y debera indicar 
+//el tipo de Objeto que usara, en nuestro caso es Mujer
+public class Mujer implements {
 	
 	
 	private String id;
@@ -69,7 +71,7 @@ public class Mujer implements ComparableMujer,Comparable<Mujer>{
 	//  en base al atributo Nombre
 	@Override
 	public int compareTo(Mujer o) {
-		int valor=this.nombre.compareTo(o.getNombre());
+		//Aquí escriba lo necesario
 		return valor;
 	}
 	
